@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css" type="text/css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Home Page</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        nav{
+    margin:5px;
+    padding:5px;
+    height:50px;
+    width:100%;
+    background-color: rgb(103, 117, 197);
+}
+.home{
+    margin-right:15px;
+    margin-top:20px;
+    color:rgb(250, 249, 249);
+    font-size: 20px;
+}
+.navlist{
+    float:right;
+    margin-right:20px;
+}
+.navlist li{
+    display: inline-block;
+    list-style-type: none;
+    margin:5px;
+    text-transform:uppercase;
+    font-size:20px;
+}
+.navlist li a{
+    color:white;
+}
+a{
+    cursor:pointer;
+}
+
+#menu{
+    display:none;
+}
+.checkbtn{
+    display:none;
+}
+
+.reg{
+        margin:0;
+        position:absolute;
+        top:50%;
+        left:32%;
+        -ms-transform:translateY(-50%);
+        transform:translateY(-50%);
+    }
+@media(max-width: 800px){
+    .checkbtn{
+        float:right;
+        display:block;
+        font-size: 40px;
+        margin-right:20px;
+    }
+    .home{
+        display:block;
+        padding:15px;
+       
+    }
+    .navlist {
+        display:block;
+        color:black;
+        position:fixed;
+        width:30%;
+        height:100vh;
+        background: #4133bb;
+        top:55px;
+        right:0;
+        text-align:center;
+    }
+    .navlist li{
+        display:block;
+        padding:15px;
+    }
+    
+}
+</style>
+</head>
+<body>
+    <nav>
+       <input type="checkbox" id="menu">
+        <label for="menu" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <a class="home" href="index.html">RECOMMEND ME SKILL/JOB</a>
+        <ul class="navlist">
+            <li><a href="/about">about</a></li>
+            <li><a href="/contact">contact</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    
+    <div class="reg">
+        <a href="/recommend"><button type="button" class="btn btn-primary btn-lg btn-block">RECOMMEND JOB THAT MATCHES WITH SKILLSET</button></a>
+        <a href="/jobseeker"><button type="button" class="btn btn-secondary btn-lg btn-block">REGISTER AS JOB SEEKER</button></a>
+        <a href="/organization"><button type="button" class="btn btn-secondary btn-lg btn-block">REGISTER AS ORGANIZATION</button></a>
+    </div>
+</body>
+</html>
